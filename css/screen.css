@@ -129,19 +129,19 @@ h3 {
 h1 {
     font-size: 36px;
     line-height: calc(var(--global-baseline) * 6);
-    margin: 0 0 24px;
+    margin: 0 0 var(--global-whitespace);
 }
 
 h2 {
     font-size: 32px;
     line-height: calc(var(--global-baseline) * 5);
-    margin: 0 0 24px;
+    margin: 0 0 var(--global-whitespace);
 }
 
 h3 {
     font-size: 26px;
     line-height: calc(var(--global-baseline) * 4);
-    margin: 0 0 24px;
+    margin: 0 0 var(--global-whitespace);
 }
 
 h4,
@@ -149,7 +149,7 @@ h5,
 h6 {
     font-size: 20px;
     line-height: calc(var(--global-baseline) * 3);
-    margin: 0 0 24px;
+    margin: 0 0 var(--global-whitespace);
 }
 
 p,
@@ -159,7 +159,7 @@ dl,
 table,
 address,
 figure {
-    margin: 0 0 24px;
+    margin: 0 0 var(--global-whitespace);
 }
 
 ul,
@@ -176,7 +176,7 @@ blockquote {
     font-style: normal;
     font-size: 23px;
     line-height: calc(var(--global-baseline) * 4);
-    margin: 0 0 24px;
+    margin: 0 0 var(--global-whitespace);
 }
 
 blockquote * {
@@ -195,7 +195,7 @@ hr {
     border: 0;
     height: 1px;
     background: var(--global-color-neutral-xx-light);
-    margin: 0 0 24px;
+    margin: 0 0 var(--global-whitespace);
 }
 
 a {
@@ -285,13 +285,13 @@ a:focus {
 }
 
 .o-section + .o-section {
-    padding-top: 24px;
+    padding-top: var(--global-whitespace);
 }
 
 @media (min-width: 768px) {
     .o-section--lg + .o-section--lg,
     .o-section--xl + .o-section--xl {
-        padding-top: 48px;
+        padding-top: var(--global-whitespace-xl);
     }
 }
 
@@ -508,7 +508,7 @@ a:focus {
 }
 
 .c-card__body{
-    padding: 48px;
+    padding: var(--global-whitespace-xl);
 }
 
 .c-card__title{
@@ -516,12 +516,12 @@ a:focus {
     font-size: 18px;
     font-weight: 600;
     line-height: 21px;
-    padding-top: 48px;
+    padding-top: var(--global-whitespace-xl);
 }
 
 .c-card__footer{
     text-align: center;
-    padding: 48px;
+    padding: var(--global-whitespace-xl);
     border-top: 1px ridge var(--global-color-neutral-dark);
 }
 
@@ -580,13 +580,13 @@ a:focus {
     display: block;
     font-size: 14px;
     line-height: calc(var(--global-baseline) * 2);
-    margin-bottom: 8px;
+    margin-bottom: var(--global-whitespace-sm);
     color: var(--global-color-neutral-xx-dark);
 }
 
 .c-label--option{
     margin-bottom: 0px;
-    margin-left: 8px;
+    margin-left: var(--global-whitespace-sm);
 }
 
 /* If a input is focused within the form-field class change te color of the label */
@@ -669,23 +669,23 @@ a:focus {
 }
 
 .u-mb-xs {
-    margin-bottom: 4px !important;
+    margin-bottom: var(--global-whitespace-xs) !important;
 }
 
 .u-mb-sm {
-    margin-bottom: 8px !important;
+    margin-bottom: var(--global-whitespace-sm) !important;
 }
 
 .u-mb-md {
-    margin-bottom: 16px !important;
+    margin-bottom: var(--global-whitespace-md) !important;
 }
 
 .u-mb-lg {
-    margin-bottom: 32px !important;
+    margin-bottom: var(--global-whitespace-lg) !important;
 }
 
 .u-mb-xl {
-    margin-bottom: 48px !important;
+    margin-bottom: var(--global-whitespace-xl) !important;
 }
 
 /*
